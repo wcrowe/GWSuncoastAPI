@@ -1,0 +1,8 @@
+﻿//
+
+PM> Install-Package Microsoft.AspNetCore.Mvc.Testing -Version 3.1.0
+PM> Install-Package Microsoft.NET.Test.Sdk -Version 16.4.0
+
+//test credentials
+my@email.com 
+mysecretpassword123

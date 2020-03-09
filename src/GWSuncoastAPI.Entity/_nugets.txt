@@ -1,0 +1,43 @@
+﻿
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/ 
+PM> Install-Package Microsoft.EntityFrameworkCore -Version 3.0.0
+
+PM> Install-Package Microsoft.EntityFrameworkCore.InMemory -Version 3.0.0
+PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 3.0.0
+PM> Install-Package Microsoft.EntityFrameworkCore.Tools -Version 3.0.0
+
+https://www.nuget.org/packages/Microsoft.AspNet.Identity.EntityFramework/
+//PM>Install-Package Microsoft.AspNet.Identity.EntityFramework
+
+https://www.newtonsoft.com/json
+PM> Install-Package Microsoft.AspNetCore.Mvc.NewtonsoftJson -Version 3.0.0
+
+https://docs.microsoft.com/en-us/ef/core/querying/related-data
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Proxies
+PM> Install-Package Microsoft.EntityFrameworkCore.Proxies -Version 3.0.0
+
+https://www.learnentityframeworkcore.com/migrations
+
+--add new migration
+PM>add-migration AddNewMigration
+
+--update db
+PM>update-database
+
+--IMPORTANT:
+--in case there is an issue with adding a migration (like all tables added not new tables only) try to remove-migration and add it again
+
+--remove last migration
+PM>remove-migration  
+--NOTE: EF Core 3.0 has known an issue with remove-migration not being complete; must remove added elements in Snapshot file
+
+--update database to specific migration
+PM>update-database AddNewMigration
+
+
+*********************************************************
+
+CodeGeneratorUtility.bat
+Open CodeGeneratorUtility.bat and update VS version
+To run all T4s right click on CodeGeneratorUtility.bat file and Open With...choose PowerShell. Add it if it is not in the list.
+
